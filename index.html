@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ubah radius kotak</title>
+</head>
+<style>
+    * {
+        text-align: center;
+    }
+
+    .kotak {
+        background-color: green;
+        width: 200px;
+        height: 200px;
+        margin: 50px auto;
+        border: 2px solid #000;
+        border-radius: 0;
+    }
+</style>
+<body>
+<div class="kotak"></div>
+<div class="input-range">
+    <div class="input-left">
+        <label for="lTop">Top Left: </label>
+        <input type="range" name="lTop" min="0">
+        <label for="rTop">Top Right: </label>
+        <input type="range" name="rTop" min="0">
+    </div>
+    <div class="input-right">
+        <label for="lBottom">Bottom Left: </label>
+        <input type="range" name="lBottom" min="0">
+        <label for="rBottom">Bottom Right: </label>
+        <input type="range" name="rBottom" min="0">
+    </div>
+</div>
+<h1>Nilai Radiusnya: </h1>
+<p class="tl"></p>
+<p class="tr"></p>
+<p class="bl"></p>
+<p class="br"></p>
+<script src="script.js"></script>
+</body>
+</html>
